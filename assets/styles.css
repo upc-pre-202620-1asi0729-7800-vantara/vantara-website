@@ -131,3 +131,30 @@ section { padding: 5rem 9%; }
 .product .box-container .box img { height: 10rem; }
 .product .box-container .box h3 { color: var(--black); font-size: 2.5rem; padding-top: 1.5rem; }
 .product .box-container .box p { color: var(--light-black); font-size: 1.5rem; padding: 1rem 0; line-height: 1.8; }
+
+/* SECCIÓN EQUIPO */
+.team .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 1.5rem;
+}
+.team .box-container .box {
+    position: relative;
+    height: 30rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+}
+.team .box-container .box img { height: 100%; width: 100%; object-fit: cover; }
+.team .box-container .box span { position: absolute; top: 1rem; right: 2rem; font-size: 5rem; font-weight: bolder; color: var(--black); }
+.team .box-container .box .content {
+    position: absolute; top: 6rem; left: 0; height: 100%; width: 100%;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    opacity: 0; transition: .3s;
+}
+.team .box-container .box:hover .content { top: 0; opacity: 1; background: rgba(255,255,255,0.9); }
+.team .box-container .box .content h3 { font-size: 2.5rem; color: var(--black); }
+.team .box-container .box .content p { font-size: 1.5rem; color: var(--light-black); }
+
+/* VIDEO DEL PRODUCTO */
+.video-container { display: flex; justify-content: center; align-items: center; margin-top: 2rem; }
