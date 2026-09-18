@@ -90,7 +90,7 @@ section { padding: 5rem 9%; }
 .header.active .navbar a { color: var(--black); }
 .header.active #menu-btn { color: var(--primary); }
 
-/* HOME / HERO /
+/* HOME / HERO */
 .home {
     display: flex;
     align-items: center;
@@ -101,7 +101,7 @@ section { padding: 5rem 9%; }
 .home .content h3 span { color: var(--primary); }
 .home .content p { font-size: 2rem; color: var(--bg); }
 
-/ ABOUT US */
+/* ABOUT US */
 .about .row { display: flex; align-items: center; flex-wrap: wrap; gap: 1.5rem; }
 .about .row .image, .about .row .content { flex: 1 1 45rem; }
 .about .row .image img { width: 100%; height: auto; }
