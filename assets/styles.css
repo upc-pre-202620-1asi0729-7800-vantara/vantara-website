@@ -110,3 +110,24 @@ section { padding: 5rem 9%; }
 .about .row .content .icons-container { display: flex; gap: 1rem; padding-top: 2rem; }
 .about .row .content .icons-container .icons { flex: 1 1 15rem; border: var(--border); padding: 1.5rem; text-align: center; border-radius: .5rem; }
 .about .row .content .icons-container .icons i { font-size: 2rem; color: var(--primary); }
+
+
+.product .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 1.5rem;
+}
+.product .box-container .box {
+    padding: 4rem 2rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    background: var(--white);
+}
+.product .box-container .box:hover {
+    transform: translateY(-0.5rem);
+}
+.product .box-container .box img { height: 10rem; }
+.product .box-container .box h3 { color: var(--black); font-size: 2.5rem; padding-top: 1.5rem; }
+.product .box-container .box p { color: var(--light-black); font-size: 1.5rem; padding: 1rem 0; line-height: 1.8; }
