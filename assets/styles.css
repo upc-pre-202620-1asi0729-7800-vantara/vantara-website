@@ -89,3 +89,24 @@ section { padding: 5rem 9%; }
 .header.active .logo { color: var(--black); }
 .header.active .navbar a { color: var(--black); }
 .header.active #menu-btn { color: var(--primary); }
+
+/* HOME / HERO /
+.home {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(rgba(26, 71, 49, 0.85), rgba(0, 0, 0, 0.8)), url(images/background.jpg) center/cover;
+    height: 100vh;
+}
+.home .content h3 { font-size: 5.5rem; color: var(--white); }
+.home .content h3 span { color: var(--primary); }
+.home .content p { font-size: 2rem; color: var(--bg); }
+
+/ ABOUT US */
+.about .row { display: flex; align-items: center; flex-wrap: wrap; gap: 1.5rem; }
+.about .row .image, .about .row .content { flex: 1 1 45rem; }
+.about .row .image img { width: 100%; height: auto; }
+.about .row .content .title { font-size: 3rem; color: var(--black); }
+.about .row .content p { font-size: 1.5rem; color: var(--light-black); line-height: 1.8; text-align: justify; }
+.about .row .content .icons-container { display: flex; gap: 1rem; padding-top: 2rem; }
+.about .row .content .icons-container .icons { flex: 1 1 15rem; border: var(--border); padding: 1.5rem; text-align: center; border-radius: .5rem; }
+.about .row .content .icons-container .icons i { font-size: 2rem; color: var(--primary); }
