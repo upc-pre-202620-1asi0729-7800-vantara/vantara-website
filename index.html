@@ -14,14 +14,14 @@
 <header class="header">
     <a href="#" class="logo"><span>HATARIUM</span></a>
     <nav class="navbar">
-        <a href="#home">Inicio</a>
-        <a href="#about">Nosotros</a>
-        <a href="#product">Producto</a>
-        <a href="#plans">Planes</a>
-        <a href="#team">Equipo</a>
-        <a href="#about-product">Sobre el producto</a>
-        <a href="#contact">Contacto</a>
-        <a href="index-en.html" id="language-toggle" lang="en" aria-label="View this page in English">EN</a>
+        <a href="#home" data-i18n="nav.home">Inicio</a>
+        <a href="#about" data-i18n="nav.about">Nosotros</a>
+        <a href="#product" data-i18n="nav.product">Producto</a>
+        <a href="#plans" data-i18n="nav.plans">Planes</a>
+        <a href="#team" data-i18n="nav.team">Equipo</a>
+        <a href="#about-product" data-i18n="nav.aboutProduct">Sobre el producto</a>
+        <a href="#contact" data-i18n="nav.contact">Contacto</a>
+        <button type="button" id="language-toggle" class="language-toggle" lang="en" aria-label="Cambiar a inglés" title="Cambiar a inglés">EN</button>
     </nav>
     <div id="menu-btn" class="fas fa-bars"></div>
 </header>
@@ -29,123 +29,124 @@
 <!-- Sección Home / Hero -->
 <section class="home" id="home">
     <div class="content">
-        <h3>Bienvenido a <span>HATARIUM</span></h3>
-        <p>Plataforma SaaS diseñada para ganaderos y médicos veterinarios</p>
+        <h3 data-i18n-html="home.title">Bienvenido a <span>HATARIUM</span></h3>
+        <p data-i18n="home.subtitle">Plataforma SaaS diseñada para ganaderos y médicos veterinarios</p>
     </div>
 </section>
 
 <!-- Sección About Us / Nosotros -->
 <section class="about" id="about">
-    <h1 class="heading"><span>Sobre</span> Nosotros</h1>
+    <h1 class="heading" data-i18n-html="about.heading"><span>Sobre</span> Nosotros</h1>
     <div class="row">
         <div class="content">
-            <h3 class="title">Vantara</h3>
-            <p class="text">Vantara es una startup peruana de tecnología agrícola fundada por estudiantes de Ingeniería de Software de la Universidad Peruana de Ciencias Aplicadas (UPC). Fue creada para resolver los principales desafíos del sector ganadero mediante herramientas digitales accesibles que permiten gestionar el ganado de forma eficiente, trazable y sostenible.</p>
+            <h3 class="title" data-i18n="about.vantaraTitle">Vantara</h3>
+            <p class="text" data-i18n="about.vantaraText">Vantara es una startup peruana de tecnología agrícola fundada por estudiantes de Ingeniería de Software de la Universidad Peruana de Ciencias Aplicadas (UPC). Fue creada para resolver los principales desafíos del sector ganadero mediante herramientas digitales accesibles que permiten gestionar el ganado de forma eficiente, trazable y sostenible.</p>
             <div class="icons-container">
                 <div class="icons">
                     <i class="fas fa-award"></i>
-                    <h3>Compromiso</h3>
+                    <h3 data-i18n="about.commitment">Compromiso</h3>
                 </div>
                 <div class="icons">
                     <i class="fas fa-user"></i>
-                    <h3>Trabajo en equipo</h3>
+                    <h3 data-i18n="about.teamwork">Trabajo en equipo</h3>
                 </div>
                 <div class="icons">
                     <i class="fas fa-project-diagram"></i>
-                    <h3>Organización</h3>
+                    <h3 data-i18n="about.organization">Organización</h3>
                 </div>
             </div>
         </div>
         <div class="image">
-            <img src="assets/images/rancher.png" alt="Ganadero Hatarium">
+            <img src="assets/images/rancher.png" alt="Ganadero Hatarium" data-i18n-attr="alt:about.imageRancher">
         </div>
     </div>
 
     <div class="row">
         <div class="image">
-            <img src="assets/images/ranchers.jpg" alt="Operaciones Ganaderas">
+            <img src="assets/images/ranchers.jpg" alt="Operaciones Ganaderas" data-i18n-attr="alt:about.imageRanchers">
         </div>
         <div class="content">
-            <h3 class="title">Ganaderos</h3>
-            <p class="text">Hatarium es una plataforma SaaS intuitiva que le permite controlar sus operaciones ganaderas en tiempo real. Puede registrar la salud, alimentación, ciclo reproductivo y asignación de lotes de sus animales desde cualquier lugar.</p>
+            <h3 class="title" data-i18n="about.ranchersTitle">Ganaderos</h3>
+            <p class="text" data-i18n="about.ranchersText">Hatarium es una plataforma SaaS intuitiva que le permite controlar sus operaciones ganaderas en tiempo real. Puede registrar la salud, alimentación, ciclo reproductivo y asignación de lotes de sus animales desde cualquier lugar.</p>
         </div>
     </div>
 
     <div class="row">
         <div class="content">
-            <h3 class="title">Veterinarios</h3>
-            <p class="text">Hatarium es una herramienta clínica integral que facilita la gestión del trabajo médico en campo y gabinete. Centraliza historiales clínicos, agiliza el registro de diagnósticos y permite llevar un control estructurado de tratamientos y citas.</p>
+            <h3 class="title" data-i18n="about.vetsTitle">Veterinarios</h3>
+            <p class="text" data-i18n="about.vetsText">Hatarium es una herramienta clínica integral que facilita la gestión del trabajo médico en campo y gabinete. Centraliza historiales clínicos, agiliza el registro de diagnósticos y permite llevar un control estructurado de tratamientos y citas.</p>
         </div>
         <div class="image">
-            <img src="assets/images/veterinarians.jpg" alt="Atención Veterinaria">
+            <img src="assets/images/veterinarians.jpg" alt="Atención Veterinaria" data-i18n-attr="alt:about.imageVets">
         </div>
     </div>
 </section>
 
 <!-- Sección Producto y Módulos -->
 <section class="product" id="product">
-    <h1 class="heading">Para <span>Ganaderos</span></h1>
+    <h1 class="heading" data-i18n-html="product.producersHeading">Para <span>Ganaderos</span></h1>
     <div class="box-container">
         <div class="box">
-            <img src="assets/images/register.png" alt="Registro Ganadero">
-            <h3>Registro Ganadero Digital</h3>
-            <p>Cree historiales clínicos individuales y organice fácilmente sus animales por lotes de manejo.</p>
+            <img src="assets/images/register.png" alt="Registro Ganadero" data-i18n-attr="alt:product.p1Alt">
+            <h3 data-i18n="product.p1Title">Registro Ganadero Digital</h3>
+            <p data-i18n="product.p1Text">Cree historiales clínicos individuales y organice fácilmente sus animales por lotes de manejo.</p>
         </div>
         <div class="box">
-            <img src="assets/images/control.png" alt="Control Reproductivo">
-            <h3>Alimentación y Control Reproductivo</h3>
-            <p>Asigne planes de alimentación y supervise el ciclo reproductivo (preñez, parto, secado y destete).</p>
+            <img src="assets/images/control.png" alt="Control Reproductivo" data-i18n-attr="alt:product.p2Alt">
+            <h3 data-i18n="product.p2Title">Alimentación y Control Reproductivo</h3>
+            <p data-i18n="product.p2Text">Asigne planes de alimentación y supervise el ciclo reproductivo (preñez, parto, secado y destete).</p>
         </div>
         <div class="box">
-            <img src="assets/images/alerts.png" alt="Alertas Automáticas">
-            <h3>Alertas Automáticas</h3>
-            <p>Reciba recordatorios sobre vacunaciones pendientes y prevención de riesgos sanitarios.</p>
+            <img src="assets/images/alerts.png" alt="Alertas Automáticas" data-i18n-attr="alt:product.p3Alt">
+            <h3 data-i18n="product.p3Title">Alertas Automáticas</h3>
+            <p data-i18n="product.p3Text">Reciba recordatorios sobre vacunaciones pendientes y prevención de riesgos sanitarios.</p>
         </div>
     </div>
     <br><br>
-    <h1 class="heading">Para <span>Veterinarios</span></h1>
+    <h1 class="heading" data-i18n-html="product.vetsHeading">Para <span>Veterinarios</span></h1>
     <div class="box-container">
         <div class="box">
-            <img src="assets/images/clinical-histories.png" alt="Historiales Clínicos">
-            <h3>Acceso a Historiales Clínicos</h3>
-            <p>Revise el historial médico completo del ganado de sus clientes en cualquier momento.</p>
+            <img src="assets/images/clinical-histories.png" alt="Historiales Clínicos" data-i18n-attr="alt:product.v1Alt">
+            <h3 data-i18n="product.v1Title">Acceso a Historiales Clínicos</h3>
+            <p data-i18n="product.v1Text">Revise el historial médico completo del ganado de sus clientes en cualquier momento.</p>
         </div>
         <div class="box">
-            <img src="assets/images/management.png" alt="Gestión de Citas">
-            <h3>Gestión de Horarios y Citas</h3>
-            <p>Reciba solicitudes de atención médica y programe sus visitas técnicas de forma organizada.</p>
+            <img src="assets/images/management.png" alt="Gestión de Citas" data-i18n-attr="alt:product.v2Alt">
+            <h3 data-i18n="product.v2Title">Gestión de Horarios y Citas</h3>
+            <p data-i18n="product.v2Text">Reciba solicitudes de atención médica y programe sus visitas técnicas de forma organizada.</p>
         </div>
         <div class="box">
-            <img src="assets/images/diagnostic.png" alt="Registro de Diagnóstico">
-            <h3>Registro de Diagnóstico</h3>
-            <p>Emita diagnósticos sobre el terreno, prescriba tratamientos y registre la aplicación de vacunas.</p>
+            <img src="assets/images/diagnostic.png" alt="Registro de Diagnóstico" data-i18n-attr="alt:product.v3Alt">
+            <h3 data-i18n="product.v3Title">Registro de Diagnóstico</h3>
+            <p data-i18n="product.v3Text">Emita diagnósticos sobre el terreno, prescriba tratamientos y registre la aplicación de vacunas.</p>
         </div>
     </div>
 </section>
 
 <!-- Planes de suscripción -->
 <section class="plans" id="plans">
-    <h1 class="heading">Planes de <span>Suscripción</span></h1>
-    <p class="plans-intro">Elige el plan que mejor se adapte a las necesidades de tu ganadería.</p>
+    <h1 class="heading" data-i18n-html="plans.heading">Planes de <span>Suscripción</span></h1>
+    <p class="plans-intro" data-i18n="plans.intro">Elige el plan que mejor se adapte a las necesidades de tu ganadería.</p>
     <div class="plans-container">
         <article class="plan-card">
-            <h2>Básico</h2>
-            <p class="plan-price">S/ 29.90 <span>/ mes</span></p>
-            <p class="plan-description">Ideal para pequeños productores.</p>
-            <ul>
+            <h2 data-i18n="plans.basic.name">Básico</h2>
+            <p class="plan-price">S/ 29.90 <span data-i18n="plans.priceUnit">/ mes</span></p>
+            <p class="plan-description" data-i18n="plans.basic.description">Ideal para pequeños productores.</p>
+            <ul data-i18n-list="plans.basic.features">
                 <li>Hasta 50 animales</li>
                 <li>Registro de historial sanitario</li>
                 <li>Control de alimentación básico</li>
                 <li>Reportes generales</li>
                 <li>Soporte por correo</li>
             </ul>
-                <a href="https://upc-pre-202620-1asi0729-7800-vantara.github.io/vantara-webapp/iam/sign-in" class="plan-button">Consultar plan</a>        </article>
+            <a href="https://upc-pre-202620-1asi0729-7800-vantara.github.io/vantara-webapp/iam/sign-in" class="plan-button" data-i18n="plans.button">Consultar plan</a>
+        </article>
         <article class="plan-card featured">
-            <span class="plan-badge">Más popular</span>
-            <h2>Profesional</h2>
-            <p class="plan-price">S/ 49.90 <span>/ mes</span></p>
-            <p class="plan-description">Para un control completo de tu ganadería.</p>
-            <ul>
+            <span class="plan-badge" data-i18n="plans.professional.badge">Más popular</span>
+            <h2 data-i18n="plans.professional.name">Profesional</h2>
+            <p class="plan-price">S/ 49.90 <span data-i18n="plans.priceUnit">/ mes</span></p>
+            <p class="plan-description" data-i18n="plans.professional.description">Para un control completo de tu ganadería.</p>
+            <ul data-i18n-list="plans.professional.features">
                 <li>Hasta 200 animales</li>
                 <li>Historial sanitario completo</li>
                 <li>Planes de alimentación avanzados</li>
@@ -154,13 +155,13 @@
                 <li>Citas y recordatorios</li>
                 <li>Soporte prioritario</li>
             </ul>
-            <a href="https://upc-pre-202620-1asi0729-7800-vantara.github.io/vantara-webapp/iam/sign-in" class="plan-button">Consultar plan</a>
+            <a href="https://upc-pre-202620-1asi0729-7800-vantara.github.io/vantara-webapp/iam/sign-in" class="plan-button" data-i18n="plans.button">Consultar plan</a>
         </article>
         <article class="plan-card">
-            <h2>Premium</h2>
-            <p class="plan-price">S/ 89.90 <span>/ mes</span></p>
-            <p class="plan-description">Todas las funcionalidades para tu operación.</p>
-            <ul>
+            <h2 data-i18n="plans.premium.name">Premium</h2>
+            <p class="plan-price">S/ 89.90 <span data-i18n="plans.priceUnit">/ mes</span></p>
+            <p class="plan-description" data-i18n="plans.premium.description">Todas las funcionalidades para tu operación.</p>
+            <ul data-i18n-list="plans.premium.features">
                 <li>Animales ilimitados</li>
                 <li>Todas las funcionalidades</li>
                 <li>Análisis y reportes avanzados</li>
@@ -169,21 +170,21 @@
                 <li>Soporte dedicado</li>
                 <li>Capacitación personalizada</li>
             </ul>
-            <a href="https://upc-pre-202620-1asi0729-7800-vantara.github.io/vantara-webapp/iam/sign-in" class="plan-button">Consultar plan</a>
+            <a href="https://upc-pre-202620-1asi0729-7800-vantara.github.io/vantara-webapp/iam/sign-in" class="plan-button" data-i18n="plans.button">Consultar plan</a>
         </article>
     </div>
 </section>
 
 <!-- Sección Equipo -->
 <section class="team" id="team">
-    <h1 class="heading"><span>Sobre el</span> Equipo</h1>
+    <h1 class="heading" data-i18n-html="team.heading"><span>Sobre el</span> Equipo</h1>
     <div class="box-container">
         <div class="box">
             <span>01</span>
             <img src="assets/images/foto-david.jpg" alt="David Meza">
             <div class="content">
                 <h3>David Meza</h3>
-                <p>Estudiante de Ing. de Software</p>
+                <p data-i18n="team.role">Estudiante de Ing. de Software</p>
             </div>
         </div>
         <div class="box">
@@ -191,7 +192,7 @@
             <img src="assets/images/foto-franco.jpg" alt="Franco Linares">
             <div class="content">
                 <h3>Franco Linares</h3>
-                <p>Estudiante de Ing. de Software</p>
+                <p data-i18n="team.role">Estudiante de Ing. de Software</p>
             </div>
         </div>
         <div class="box">
@@ -199,7 +200,7 @@
             <img src="assets/images/foto-juan.png" alt="Juan Ayllon">
             <div class="content">
                 <h3>Juan Ayllon</h3>
-                <p>Estudiante de Ing. de Software</p>
+                <p data-i18n="team.role">Estudiante de Ing. de Software</p>
             </div>
         </div>
         <div class="box">
@@ -207,7 +208,7 @@
             <img src="assets/images/foto-eduardo.jpg" alt="Eduardo Taza">
             <div class="content">
                 <h3>Eduardo Taza</h3>
-                <p>Estudiante de Ing. de Software</p>
+                <p data-i18n="team.role">Estudiante de Ing. de Software</p>
             </div>
         </div>
         <div class="box">
@@ -215,7 +216,7 @@
             <img src="assets/images/foto-martin.jpg" alt="Martin Asmat">
             <div class="content">
                 <h3>Martin Asmat</h3>
-                <p>Estudiante de Ing. de Software</p>
+                <p data-i18n="team.role">Estudiante de Ing. de Software</p>
             </div>
         </div>
     </div>
@@ -223,30 +224,30 @@
 
 <!-- Sección Sobre el Producto -->
 <section class="about-product" id="about-product">
-    <h1 class="heading"><span>Sobre el</span> Producto</h1>
+    <h1 class="heading" data-i18n-html="aboutProduct.heading"><span>Sobre el</span> Producto</h1>
     <div class="video-container">
-        <iframe width="560" height="315" src="https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241b645_upc_edu_pe/IQCDQjed5qhyR6kXCKI0k-1vAVzHmNJGotmTSCgda-dBNMc?e=Q3aDh8&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D" title="Video Hatarium" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/6qorrOf7LjU" title="Video Hatarium" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen data-i18n-attr="title:aboutProduct.videoTitle"></iframe>
     </div>
 </section>
 
 <!-- Sección Contacto -->
 <section class="contact" id="contact">
-    <h1 class="heading"><span>Contacto</span></h1>
+    <h1 class="heading" data-i18n-html="contact.heading"><span>Contacto</span></h1>
     <div class="icons-container">
         <div class="icons">
             <i class="fas fa-phone"></i>
-            <h3>Teléfono</h3>
-            <p><a href="#">+51 987 654 321</a></p>
+            <h3 data-i18n="contact.phoneLabel">Teléfono</h3>
+            <p><a href="tel:+51987654321">+51 987 654 321</a></p>
         </div>
         <div class="icons">
             <i class="fas fa-envelope"></i>
-            <h3>Correo electrónico</h3>
+            <h3 data-i18n="contact.emailLabel">Correo electrónico</h3>
             <p><a href="mailto:contact@hatarium.com">contact@hatarium.com</a></p>
         </div>
         <div class="icons">
             <i class="fas fa-map-marker-alt"></i>
-            <h3>Ubicación</h3>
-            <p>Lima, Perú</p>
+            <h3 data-i18n="contact.locationLabel">Ubicación</h3>
+            <p data-i18n="contact.locationValue">Lima, Perú</p>
         </div>
     </div>
 </section>
@@ -255,24 +256,26 @@
 <section class="footer">
     <div class="box-container">
         <div class="box">
-            <h3>Servicios</h3>
-            <a href="#product"><i class="fas fa-check"></i>Gestión Ganadera Digital</a>
-            <a href="#product"><i class="fas fa-check"></i>Atención Veterinaria Especializada</a>
+            <h3 data-i18n="footer.services">Servicios</h3>
+            <a href="#product"><i class="fas fa-check"></i><span data-i18n="footer.service1">Gestión Ganadera Digital</span></a>
+            <a href="#product"><i class="fas fa-check"></i><span data-i18n="footer.service2">Atención Veterinaria Especializada</span></a>
         </div>
         <div class="box">
-            <h3>Redes Sociales</h3>
+            <h3 data-i18n="footer.social">Redes Sociales</h3>
             <a href="#"><i class="fab fa-facebook-f"></i>Facebook</a>
             <a href="https://github.com/upc-pre-202620-1asi0729-7800-vantara"><i class="fab fa-github"></i>GitHub</a>
         </div>
         <div class="box">
-            <h3>Contacto</h3>
+            <h3 data-i18n="footer.contact">Contacto</h3>
             <a href="#contact"><i class="fas fa-envelope"></i>contact@hatarium.com</a>
-            <a href="#contact"><i class="fas fa-map-marker-alt"></i>Lima, Perú</a>
+            <a href="#contact"><i class="fas fa-map-marker-alt"></i><span data-i18n="footer.contactLocation">Lima, Perú</span></a>
         </div>
     </div>
-    <div class="credit">Creado por <span>Vantara</span> | Todos los derechos reservados &copy; 2026</div>
+    <div class="credit" data-i18n-html="footer.credit">Creado por <span>Vantara</span> | Todos los derechos reservados &copy; 2026</div>
 </section>
 
+<script src="assets/i18n/translations.js"></script>
+<script src="assets/i18n/i18n.js"></script>
 <script src="assets/script.js"></script>
 </body>
 </html>

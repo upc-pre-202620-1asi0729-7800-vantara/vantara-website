@@ -62,17 +62,47 @@ section { padding: 5rem 9%; }
 
 .header .logo span { color: var(--primary); }
 
+.header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
 .header .navbar a {
     font-size: 1.7rem;
     margin: 0 1.8rem;
     text-transform: uppercase;
     color: var(--white);
+    white-space: nowrap;
 }
 
 .header .navbar a:hover {
     color: var(--primary);
     border-bottom: 0.3rem solid var(--primary);
     padding-bottom: .5rem;
+}
+
+/* Selector de idioma (i18n) */
+.header .navbar .language-toggle {
+    font-family: inherit;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1;
+    margin: 0 0 0 1.8rem;
+    padding: .6rem 1rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--white);
+    background: transparent;
+    border: .1rem solid var(--primary);
+    border-radius: .5rem;
+    cursor: pointer;
+}
+.header .navbar .language-toggle:hover,
+.header .navbar .language-toggle:focus-visible {
+    background: var(--primary);
+    color: var(--white);
 }
 
 #menu-btn {
@@ -88,6 +118,8 @@ section { padding: 5rem 9%; }
 }
 .header.active .logo { color: var(--black); }
 .header.active .navbar a { color: var(--black); }
+.header.active .navbar .language-toggle { color: var(--black); }
+.header.active .navbar .language-toggle:hover { color: var(--white); }
 .header.active #menu-btn { color: var(--primary); }
 
 /* HOME / HERO */
@@ -224,6 +256,11 @@ section { padding: 5rem 9%; }
 .footer .credit { color: var(--white); text-align: center; margin-top: 2rem; font-size: 2rem; border-top: 1px solid rgba(255,255,255,0.2); padding-top: 2rem; }
 
 /* MEDIA QUERIES RESPONSIVAS */
+@media(max-width: 1400px) and (min-width: 769px) {
+    .header .navbar a { margin: 0 1rem; font-size: 1.5rem; }
+    .header .navbar .language-toggle { margin-left: 1rem; }
+}
+
 @media(max-width: 768px) {
     .plans-container { grid-template-columns: 1fr; max-width: 48rem; }
     .plan-card.featured { transform: none; }
@@ -235,4 +272,5 @@ section { padding: 5rem 9%; }
     }
     .header .navbar.active { display: flex; }
     .header .navbar a { color: var(--black); margin: 1rem; font-size: 2rem; }
+    .header .navbar .language-toggle { color: var(--black); margin: 1rem; font-size: 2rem; align-self: flex-start; }
 }
